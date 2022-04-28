@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="3" total="4" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="All Test Suite" duration-ms="107" started-at="2022-04-07T07:50:32 IST" finished-at="2022-04-07T07:50:32 IST">
+    <groups>
+      <group name="smoke">
+        <method signature="UnderstandTestAttributesTest.teslaDomianTest()[pri:0, instance:com.fta.handson.selenium.testng.earlier.miscellaneous.UnderstandTestAttributesTest@64bfbc86]" name="teslaDomianTest" class="com.fta.handson.selenium.testng.earlier.miscellaneous.UnderstandTestAttributesTest"/>
+      </group> <!-- smoke -->
+      <group name="sanity">
+        <method signature="UnderstandTestAttributesTest.teslaDomianTest()[pri:0, instance:com.fta.handson.selenium.testng.earlier.miscellaneous.UnderstandTestAttributesTest@64bfbc86]" name="teslaDomianTest" class="com.fta.handson.selenium.testng.earlier.miscellaneous.UnderstandTestAttributesTest"/>
+      </group> <!-- sanity -->
+    </groups>
+    <test name="C:/Users/Lenovo/Desktop/sKA/courses/fTABasicsUSA/handson/fTABasicsMavenProject" duration-ms="107" started-at="2022-04-07T07:50:32 IST" finished-at="2022-04-07T07:50:32 IST">
+      <class name="com.fta.handson.selenium.testng.earlier.miscellaneous.UnderstandTestAttributesTest">
+        <test-method status="PASS" signature="teslaDomianTest()[pri:0, instance:com.fta.handson.selenium.testng.earlier.miscellaneous.UnderstandTestAttributesTest@64bfbc86]" name="teslaDomianTest" duration-ms="14" started-at="2022-04-07T07:50:32 IST" finished-at="2022-04-07T07:50:32 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teslaDomianTest -->
+      </class> <!-- com.fta.handson.selenium.testng.earlier.miscellaneous.UnderstandTestAttributesTest -->
+    </test> <!-- C:/Users/Lenovo/Desktop/sKA/courses/fTABasicsUSA/handson/fTABasicsMavenProject -->
+  </suite> <!-- All Test Suite -->
+</testng-results>
