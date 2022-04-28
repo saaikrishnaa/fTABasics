@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="All Test Suite">
-    <test parallel="methods" thread-count="2"
-          name="C:/Users/Lenovo/Desktop/sKA/courses/fTABasicsUSA/handson/fTABasicsMavenProject">
-        <classes>
-            <class name="com.fta.handson.fw.tests.SauceDemoStandardUserLoginTest"/>
-            <class name="com.fta.handson.fw.tests.SauceDemoLockedOutUserLoginTest"/>
-        </classes>
-    </test>
-</suite>
+<!--<?xml version="1.0" encoding="UTF-8"?>-->
+<!--<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">-->
+<!--<suite name="All Test Suite">-->
+<!--    <test parallel="methods" thread-count="2"-->
+<!--          name="C:/Users/Lenovo/Desktop/sKA/courses/fTABasicsUSA/handson/fTABasicsMavenProject">-->
+<!--        <classes>-->
+<!--            <class name="com.fta.handson.fw.tests.SauceDemoStandardUserLoginTest"/>-->
+<!--            <class name="com.fta.handson.fw.tests.SauceDemoLockedOutUserLoginTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--</suite>-->
