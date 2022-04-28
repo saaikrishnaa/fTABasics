@@ -4,8 +4,8 @@
     <test parallel="methods" thread-count="2"
           name="C:/Users/Lenovo/Desktop/sKA/courses/fTABasicsUSA/handson/fTABasicsMavenProject">
         <classes>
-            <class name="com.fta.handson.fw.tests.SauceDemoStandardUserLoginTest"/>
-            <class name="com.fta.handson.fw.tests.SauceDemoLockedOutUserLoginTest"/>
+            <class name="com.fta.handson.tests.SauceDemoStandardUserLoginTest"/>
+            <class name="com.fta.handson.tests.SauceDemoLockedOutUserLoginTest"/>
         </classes>
     </test>
 </suite>
