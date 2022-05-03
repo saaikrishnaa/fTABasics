@@ -83,6 +83,13 @@
             <version>1.0.12</version>
         </dependency>
 
+             <!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
+<dependency>
+    <groupId>com.google.guava</groupId>
+    <artifactId>guava</artifactId>
+    <version>31.1-jre</version>
+</dependency>
+
     </dependencies>
 
     <build>
@@ -102,4 +109,5 @@
         </pluginManagement>
     </build> 
          <!-- adding something in my local branch -->
+         
 </project>
