@@ -2,6 +2,8 @@ package com.fta.handson.driver;
 
 import org.openqa.selenium.WebDriver;
 
+import java.util.List;
+
 public final class DriverManager {
 
     private static final ThreadLocal<WebDriver> threadLocal = new ThreadLocal<>();

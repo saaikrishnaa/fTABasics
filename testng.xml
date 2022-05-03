@@ -5,7 +5,7 @@
           name="C:/Users/Lenovo/Desktop/sKA/courses/fTABasicsUSA/handson/fTABasicsMavenProject">
         <classes>
             <class name="com.fta.handson.tests.SauceDemoStandardUserLoginTest"/>
-            <class name="com.fta.handson.tests.SauceDemoLockedOutUserLoginTest"/>
+            <class name="com.fta.handson.tests.SauceDemoStandardUserLoginAddToCartTest"/>
         </classes>
     </test>
 </suite>
