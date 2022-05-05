@@ -2,6 +2,7 @@ package com.fta.handson.utils;
 
 import com.fta.handson.config.ConfigurationFactory;
 import com.fta.handson.driver.DriverManager;
+import com.fta.handson.enums.WaitStrategy;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -22,14 +23,14 @@ public class WebElementUtils {
         element.sendKeys(inputToTextBox); // TODO - furthermore efficient way instead the above way, discuss WHY?
     }
 
-    public static void click(By by, String waitStrategy) {
+    public static void click(By by, WaitStrategy waitStrategy) {
         WebElement element = null;
-        if (waitStrategy.equalsIgnoreCase("clickable")) {
-            element = waitUntilElementToBeClicked(by);
 
-        } else if (waitStrategy.equalsIgnoreCase("presence")) {
+        if (waitStrategy == WaitStrategy.CLICKABLE) {
+            element = waitUntilElementToBeClicked(by);
+        } else if (waitStrategy == WaitStrategy.PRESENCE) {
             element = waitUntilElementPresence(by);
-        } else if (waitStrategy.equalsIgnoreCase("visibile")) {
+        } else {
             element = waitUntilElementToBeVisible(by);
         }
         element.click();

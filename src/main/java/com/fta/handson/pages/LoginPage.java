@@ -1,5 +1,6 @@
 package com.fta.handson.pages;
 
+import com.fta.handson.enums.WaitStrategy;
 import com.fta.handson.utils.WebElementUtils;
 import org.openqa.selenium.By;
 
@@ -20,7 +21,8 @@ public class LoginPage {
     }
 
     public InventoryPage clickLogin() {
-        WebElementUtils.click(BTN_SUBMIT);
+//        WebElementUtils.click(BTN_SUBMIT,"presence");
+        WebElementUtils.click(BTN_SUBMIT, WaitStrategy.PRESENCE);
         return new InventoryPage();
     }
 
