@@ -10,4 +10,6 @@ public interface FrameworkConfig extends Config {
     String url();
 
     String browser();
+
+    int apiversion();
 }
