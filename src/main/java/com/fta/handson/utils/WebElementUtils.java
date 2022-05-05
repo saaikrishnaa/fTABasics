@@ -14,6 +14,9 @@ public class WebElementUtils {
     }
 
     public static void click(By by) {
+//        waitUntilElementPresence(by);
+//        DriverManager.getDriver().findElement(by).click(); //We are finding the web element again
+
         WebElement element = waitUntilElementPresence(by);
         element.click(); // TODO - furthermore efficient way instead the above way, discuss WHY?
     }
