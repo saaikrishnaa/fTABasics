@@ -16,7 +16,6 @@ public class SauceLabsHomePageTest extends BaseTest{
         };
     }
 
-
     @Test(description = "To test the title of the Sauce Labs Home Page", dataProvider = "supplyData")
     public void validateSauceLabsTitleTest(String username, String password){
         LoginPage loginPage = new LoginPage();
@@ -24,17 +23,12 @@ public class SauceLabsHomePageTest extends BaseTest{
         loginPage.loginToSauceDemoApplication(username,password);
 
         LeftMenuComponent leftMenuComponent = new LeftMenuComponent();
-
-//        //without using the method chaining
-//        leftMenuComponent.clickHamburgerMenu();
-//        leftMenuComponent.clickAbout();
-
-        //with method chaining
         leftMenuComponent
                 .clickHamburgerMenu()
                 .clickAbout();
 
         SauceLabsHomePage sauceLabsHomePage = new SauceLabsHomePage();
+
         String actualValue = sauceLabsHomePage.getPageTitle();
         String expectedValue = "";
 
