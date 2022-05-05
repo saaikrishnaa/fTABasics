@@ -3,6 +3,7 @@ package com.fta.handson.utils;
 import com.fta.handson.config.ConfigurationFactory;
 import com.fta.handson.driver.DriverManager;
 import com.fta.handson.enums.WaitStrategy;
+import com.fta.handson.reports.ExtentLogger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -13,20 +14,24 @@ public class WebElementUtils {
     private WebElementUtils() {
     }
 
-    public static void click(By by) {
+    public static void click(By by, String webElementName) {
 //        waitUntilElementPresence(by);
 //        DriverManager.getDriver().findElement(by).click(); //We are finding the web element again
 
         WebElement element = waitUntilElementPresence(by);
         element.click(); // TODO - furthermore efficient way instead the above way, discuss WHY?
+
+        ExtentLogger.pass(webElementName+" is clicked successfully");
     }
 
-    public static void sendKeys(By by, String inputToTextBox) {
+    public static void sendKeys(By by, String inputToTextBox, String webElementName) {
         WebElement element = waitUntilElementPresence(by);
         element.sendKeys(inputToTextBox); // TODO - furthermore efficient way instead the above way, discuss WHY?
+
+        ExtentLogger.pass(inputToTextBox+" is entered successfully to - "+webElementName);
     }
 
-    public static void click(By by, WaitStrategy waitStrategy) {
+    public static void click(By by, WaitStrategy waitStrategy, String webElementName) {
         WebElement element = null;
 
         if (waitStrategy == WaitStrategy.CLICKABLE) {
@@ -37,6 +42,7 @@ public class WebElementUtils {
             element = waitUntilElementToBeVisible(by);
         }
         element.click();
+        ExtentLogger.pass(webElementName+" is clicked successfully");
     }
 
     private static WebElement waitUntilElementToBeVisible(By by) {
