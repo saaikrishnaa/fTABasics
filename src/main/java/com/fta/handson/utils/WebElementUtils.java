@@ -13,19 +13,13 @@ public class WebElementUtils {
     }
 
     public static void click(By by) {
-        waitUntilElementPresence(by);
-        DriverManager.getDriver().findElement(by).click();
-
-//        WebElement element = waitUntilElementPresence(by);
-//        element.click(); // TODO - furthermore efficient way instead the above way, discuss WHY?
+        WebElement element = waitUntilElementPresence(by);
+        element.click(); // TODO - furthermore efficient way instead the above way, discuss WHY?
     }
 
     public static void sendKeys(By by, String inputToTextBox) {
-        waitUntilElementPresence(by);
-        DriverManager.getDriver().findElement(by).sendKeys(inputToTextBox);
-
-//        WebElement element = waitUntilElementPresence(by);
-//        element.sendKeys(inputToTextBox); // TODO - furthermore efficient way instead the above way, discuss WHY?
+        WebElement element = waitUntilElementPresence(by);
+        element.sendKeys(inputToTextBox); // TODO - furthermore efficient way instead the above way, discuss WHY?
     }
 
     public static void click(By by, String waitStrategy) {
@@ -35,8 +29,15 @@ public class WebElementUtils {
 
         } else if (waitStrategy.equalsIgnoreCase("presence")) {
             element = waitUntilElementPresence(by);
+        } else if (waitStrategy.equalsIgnoreCase("visibile")) {
+            element = waitUntilElementToBeVisible(by);
         }
         element.click();
+    }
+
+    private static WebElement waitUntilElementToBeVisible(By by) {
+        WebDriverWait explicitWait = new WebDriverWait(DriverManager.getDriver(), ConfigurationFactory.getConfig().duration());
+        return explicitWait.until(ExpectedConditions.visibilityOfElementLocated(by));
     }
 
     private static WebElement waitUntilElementToBeClicked(By by) {
