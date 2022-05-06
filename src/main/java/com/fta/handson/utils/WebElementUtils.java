@@ -1,9 +1,11 @@
 package com.fta.handson.utils;
 
+import com.aventstack.extentreports.ExtentTest;
 import com.fta.handson.config.ConfigurationFactory;
 import com.fta.handson.driver.DriverManager;
 import com.fta.handson.enums.WaitStrategy;
 import com.fta.handson.reports.ExtentLogger;
+import com.fta.handson.reports.ExtentReport;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -15,20 +17,16 @@ public class WebElementUtils {
     }
 
     public static void click(By by, String webElementName) {
-//        waitUntilElementPresence(by);
-//        DriverManager.getDriver().findElement(by).click(); //We are finding the web element again
-
         WebElement element = waitUntilElementPresence(by);
-        element.click(); // TODO - furthermore efficient way instead the above way, discuss WHY?
-
-        ExtentLogger.pass(webElementName+" is clicked successfully");
+        element.click();
+        ExtentLogger.pass(webElementName + " is clicked successfully");
     }
 
     public static void sendKeys(By by, String inputToTextBox, String webElementName) {
         WebElement element = waitUntilElementPresence(by);
-        element.sendKeys(inputToTextBox); // TODO - furthermore efficient way instead the above way, discuss WHY?
+        element.sendKeys(inputToTextBox);
 
-        ExtentLogger.pass(inputToTextBox+" is entered successfully to - "+webElementName);
+        ExtentLogger.pass(inputToTextBox + " is entered successfully to - " + webElementName);
     }
 
     public static void click(By by, WaitStrategy waitStrategy, String webElementName) {
@@ -42,7 +40,7 @@ public class WebElementUtils {
             element = waitUntilElementToBeVisible(by);
         }
         element.click();
-        ExtentLogger.pass(webElementName+" is clicked successfully");
+        ExtentLogger.pass(webElementName + " is clicked successfully");
     }
 
     private static WebElement waitUntilElementToBeVisible(By by) {
