@@ -24,6 +24,18 @@ public final class ExtentReport {
         ExtentManager.setTest(extentTest);
     }
 
+    public static void assignAuthor(String authorName){
+        ExtentManager.getTest().assignAuthor(authorName);
+    }
+
+    public static void assignCategory(String testCategory){
+        ExtentManager.getTest().assignCategory(testCategory);
+    }
+
+    public static void assignDevices(String deviceType){
+        ExtentManager.getTest().assignDevice(deviceType);
+    }
+
     public static void flushReports() {
         extent.flush();
     }
