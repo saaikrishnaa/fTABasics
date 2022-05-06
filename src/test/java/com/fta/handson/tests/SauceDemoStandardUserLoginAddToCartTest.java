@@ -1,5 +1,6 @@
 package com.fta.handson.tests;
 
+import com.fta.handson.annotations.FrameworkAnnotation;
 import com.fta.handson.driver.DriverManager;
 import com.fta.handson.pages.InventoryPage;
 import com.fta.handson.pages.LoginPage;
@@ -18,6 +19,7 @@ public class SauceDemoStandardUserLoginAddToCartTest extends BaseTest {
     }
 
     @Test(description = "To test the login functionality in Sauce Labs application", dataProvider = "provideData")
+    @FrameworkAnnotation(authorName = "Vishnu",category = "Sanity",devices = "Mac")
     public void sauceLabsStandardUserLoginAddToCartTest(String username, String password,String expectedValue) throws InterruptedException {
         LoginPage loginPage = new LoginPage();
 

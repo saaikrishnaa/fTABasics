@@ -1,5 +1,6 @@
 package com.fta.handson.tests;
 
+import com.fta.handson.annotations.FrameworkAnnotation;
 import com.fta.handson.driver.Driver;
 import com.fta.handson.driver.DriverManager;
 import com.fta.handson.pages.LoginPage;
@@ -12,11 +13,12 @@ public class SauceDemoLockedOutUserLoginTest extends BaseTest {
     @DataProvider(name = "supply")
     public static Object[][] supplyData() {
         return new Object[][]{
-                {"locked_out_user", "secret_sauce"}
+                {"locked_out_user", "secret_saucea"}
         };
     }
 
     @Test(description = "To test the login functionality in Sauce Labs application", dataProvider = "supply")
+    @FrameworkAnnotation(authorName = "SK",category = "Regression",devices = "Android")
     public void sauceLabsLockedOutUserLoginTest(String username, String password) throws InterruptedException {
 
         Driver.initDriver();//Even if multiple times WebDriver is instantiated, we will not invoke multiple browser instances
