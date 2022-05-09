@@ -16,7 +16,7 @@ public class SauceDemoStandardUserLoginTest extends BaseTest {
         };
     }
 
-    @Test(description = "To test the login functionality in Sauce Labs application", dataProvider = "provide")
+    @Test(description = "Logging saucedemo application using proper credentials", dataProvider = "provide")
     @FrameworkAnnotation(authorName = "Padmaja",category = "Regression",devices = "Tablet")
     public void sauceLabsStandardUserLoginTest(String username, String password) throws InterruptedException {
         LoginPage loginPage = new LoginPage();

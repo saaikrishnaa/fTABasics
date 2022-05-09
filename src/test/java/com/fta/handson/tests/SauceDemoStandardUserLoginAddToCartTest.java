@@ -4,6 +4,8 @@ import com.fta.handson.annotations.FrameworkAnnotation;
 import com.fta.handson.driver.DriverManager;
 import com.fta.handson.pages.InventoryPage;
 import com.fta.handson.pages.LoginPage;
+import com.fta.handson.reports.ExtentManager;
+import com.fta.handson.reports.ExtentReport;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
@@ -18,9 +20,10 @@ public class SauceDemoStandardUserLoginAddToCartTest extends BaseTest {
         };
     }
 
-    @Test(description = "To test the login functionality in Sauce Labs application", dataProvider = "provideData")
+    @Test(description = "Logging saucedemo application using proper credentials, Adding product to cart", dataProvider = "provideData")
     @FrameworkAnnotation(authorName = "Vishnu",category = "Sanity",devices = "Mac")
     public void sauceLabsStandardUserLoginAddToCartTest(String username, String password,String expectedValue) throws InterruptedException {
+
         LoginPage loginPage = new LoginPage();
 
         loginPage.loginToSauceDemoApplication(username, password);

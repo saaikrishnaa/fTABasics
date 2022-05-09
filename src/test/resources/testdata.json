@@ -1,0 +1,18 @@
+[
+	{
+		"testcasename":"sauceDemoLoginTest",
+		"username":"standard_user",
+		"password":"secret_sauce"
+	},
+	{
+		"testcasename":"sauceDemoLoginTest",
+		"username":"locked_out_user",
+		"password":"secret_sauce"
+	},
+	{
+		"testcasename":"invalidTest",
+		"username":"invalid_uset_name",
+		"password":"invalid_password"
+	}
+	
+]

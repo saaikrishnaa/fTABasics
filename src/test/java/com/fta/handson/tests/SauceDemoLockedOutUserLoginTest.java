@@ -17,8 +17,8 @@ public class SauceDemoLockedOutUserLoginTest extends BaseTest {
         };
     }
 
-    @Test(description = "To test the login functionality in Sauce Labs application", dataProvider = "supply")
-    @FrameworkAnnotation(authorName = "SK",category = "Regression",devices = "Android")
+    @Test(description = "Logging saucedemo application using locked out credentials", dataProvider = "supply")
+    @FrameworkAnnotation(authorName = "SK", category = "Regression", devices = "Android")
     public void sauceLabsLockedOutUserLoginTest(String username, String password) throws InterruptedException {
 
         Driver.initDriver();//Even if multiple times WebDriver is instantiated, we will not invoke multiple browser instances

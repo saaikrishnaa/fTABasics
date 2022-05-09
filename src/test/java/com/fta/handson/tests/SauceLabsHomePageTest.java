@@ -17,9 +17,9 @@ public class SauceLabsHomePageTest extends BaseTest{
         };
     }
 
-    @Test(description = "To test the title of the Sauce Labs Home Page", dataProvider = "supplyData")
+    @Test(description = "Logging saucedemo application using proper credentials, Navigating to the Home Page", dataProvider = "supplyData")
     @FrameworkAnnotation(authorName = "Lakshmi",category = "Smoke",devices = "Android")
-    public void validateSauceLabsTitleTest(String username, String password){
+        public void validateSauceLabsTitleTest(String username, String password){
         LoginPage loginPage = new LoginPage();
 
         loginPage.loginToSauceDemoApplication(username,password);
