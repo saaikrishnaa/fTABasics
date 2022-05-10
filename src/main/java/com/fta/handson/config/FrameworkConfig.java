@@ -11,5 +11,9 @@ public interface FrameworkConfig extends Config {
 
     String browser();
 
-    int apiversion();
+    boolean isHeadless();
+
+    String runEnv();
+
+    String remoteUrl();
 }
