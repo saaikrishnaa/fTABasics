@@ -13,6 +13,11 @@
 		"testcasename":"invalidTest",
 		"username":"invalid_uset_name",
 		"password":"invalid_password"
+	},
+	{
+		"testcasename":"sauceDemoLoginTest",
+		"username":"standard_user",
+		"password":"secret_sauce"
 	}
 	
 ]

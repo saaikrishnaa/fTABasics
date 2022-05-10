@@ -10,12 +10,12 @@
           name="C:/Users/Lenovo/Desktop/sKA/courses/fTABasicsUSA/handson/fTABasicsMavenProject">
         <classes>
 <!--            <class name="com.fta.handson.tests.SauceDemoStandardUserLoginTest"/>-->
-            <class name="com.fta.handson.tests.SauceDemoStandardUserLoginAddToCartTest"/>
+<!--            <class name="com.fta.handson.tests.SauceDemoStandardUserLoginAddToCartTest"/>-->
 <!--            <class name="com.fta.handson.tests.SauceDemoLockedOutUserLoginTest"/>-->
             <class name="com.fta.handson.tests.SauceLabsHomePageTest"/>
-            <class name="com.fta.handson.tests.SauceDemoUserLoginDataProviderTest"/>
-            <class name="com.fta.handson.tests.SauceDemoUserLoginWithExcelDataSupplierTest"/>
-            <class name="com.fta.handson.tests.SauceDemoUserLoginWithJSONDataSupplierTest"/>
+<!--            <class name="com.fta.handson.tests.SauceDemoUserLoginDataProviderTest"/>-->
+<!--            <class name="com.fta.handson.tests.SauceDemoUserLoginWithExcelDataSupplierTest"/>-->
+<!--            <class name="com.fta.handson.tests.SauceDemoUserLoginWithJSONDataSupplierTest"/>-->
         </classes>
     </test>
 </suite>

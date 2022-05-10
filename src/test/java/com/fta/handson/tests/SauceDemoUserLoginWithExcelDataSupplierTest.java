@@ -25,7 +25,7 @@ public class SauceDemoUserLoginWithExcelDataSupplierTest extends BaseTest {
                 .withTarget(TestDataExcel.class)
                 .withSource("testdata.xlsx")
                 .read()
-                .filter(testdata -> testdata.testName.equalsIgnoreCase("sauceDemoLoginTest"));
+                .filter(testData -> testData.testName.equalsIgnoreCase("sauceDemoLoginTest"));
     }
 
 }
