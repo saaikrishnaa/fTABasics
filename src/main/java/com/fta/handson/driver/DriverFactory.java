@@ -24,5 +24,6 @@ public final class DriverFactory {
             driver = RemoteDriverFactory.getRemoteDriverInstance(browserName, isHeadless);
         }
         return driver;
+        //adding this line to demonstrate that we can do changes on the fly, NOT RECOMMENDED
     }
 }
