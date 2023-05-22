@@ -161,7 +161,7 @@
             </build>
         </profile>
     </profiles>
-
+<!-- this is a comment, and this is not a proper way to contribute or to work with repositories in a collaborated environment -->
     <build>
         <pluginManagement>
             <plugins>
