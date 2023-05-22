@@ -36,7 +36,7 @@
             <version>7.4.0</version>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/com.h2database/h2 -->
+       
         <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
